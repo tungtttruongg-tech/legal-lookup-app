@@ -1,6 +1,6 @@
 "use server";
 
-import pdf from "pdf-parse";
+const pdf = require("pdf-parse");
 import mammoth from "mammoth";
 
 export async function parseFileContent(formData: FormData): Promise<string> {
