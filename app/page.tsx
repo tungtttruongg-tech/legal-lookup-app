@@ -17,16 +17,17 @@ export default function Home() {
         </p>
 
         <div className="max-w-2xl mx-auto relative">
-          <div className="relative flex items-center w-full">
+          <form action="/search" className="relative flex items-center w-full">
             <Search className="absolute left-4 h-5 w-5 text-slate-400" />
             <Input
+              name="q"
               className="pl-12 h-14 text-lg shadow-lg border-slate-200 rounded-full focus-visible:ring-blue-500"
               placeholder="Nhập từ khóa, số hiệu văn bản hoặc câu hỏi pháp lý..."
             />
-            <Button className="absolute right-2 rounded-full px-6 bg-blue-600 hover:bg-blue-700">
+            <Button type="submit" className="absolute right-2 rounded-full px-6 bg-blue-600 hover:bg-blue-700">
               Tìm kiếm
             </Button>
-          </div>
+          </form>
           <p className="mt-2 text-sm text-slate-500">
             Gợi ý: &quot;Quy định về hóa đơn điện tử&quot;, &quot;Lương tối thiểu vùng 2024&quot;, &quot;Thủ tục giải thể doanh nghiệp&quot;
           </p>

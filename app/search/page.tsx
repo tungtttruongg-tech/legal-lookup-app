@@ -15,17 +15,18 @@ export default function SearchPage({
         <div className="max-w-5xl mx-auto">
             {/* Search Header */}
             <div className="mb-8">
-                <div className="flex space-x-4 mb-4">
+                <form className="flex space-x-4 mb-4">
                     <div className="relative flex-1">
                         <Search className="absolute left-3 top-3 h-5 w-5 text-slate-400" />
                         <Input
+                            name="q"
                             defaultValue={query}
                             className="pl-10 h-11 text-base shadow-sm"
                             placeholder="Nhập từ khóa tìm kiếm..."
                         />
                     </div>
-                    <Button className="h-11 px-8 bg-blue-600 hover:bg-blue-700">Tìm kiếm</Button>
-                </div>
+                    <Button type="submit" className="h-11 px-8 bg-blue-600 hover:bg-blue-700">Tìm kiếm</Button>
+                </form>
 
                 <div className="flex items-center space-x-4">
                     <Button variant="outline" size="sm" className="text-slate-600">
